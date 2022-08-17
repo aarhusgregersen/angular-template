@@ -1,0 +1,11 @@
+<h1 class="title" *ngIf="title">
+  <ng-template [ngTemplateOutlet]="title"></ng-template>
+</h1>
+
+<div class="content" *ngIf="body">
+  <ng-template [ngTemplateOutlet]="body"></ng-template>
+</div>
+
+<div class="footer" *ngIf="footer">
+  <ng-template [ngTemplateOutlet]="footer"></ng-template>
+</div>
